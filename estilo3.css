@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: #000000;
+    /* Cor de fundo da navbar */
+    color: #fff;
+    /* Cor do texto da navbar */
+    padding: 10px;
+    /* Espaçamento interno da navbar */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    /* Ativar Flexbox */
+    justify-content: space-between;
+    /* Alinhar itens da barra de navegação */
+    align-items: center;
+    /* Alinhar verticalmente os itens */
+    z-index: 999;
+    /* Garantir que a barra de navegação esteja acima de outros elementos */
+}
+
+nav ul {
+    list-style: none;
+    /* Remover marcadores de lista padrão */
+    margin: 0;
+    /* Remover margem padrão da lista */
+    padding: 0;
+    /* Remover preenchimento padrão da lista */
+    display: flex;
+    /* Ativar Flexbox */
+    align-items: center;
+    /* Alinhar verticalmente os itens */
+}
+
+nav li {
+    margin-right: 20px;
+    /* Espaçamento entre os itens do menu */
+}
+
+nav a {
+    color: #fff;
+    /* Cor dos links da navbar */
+    font-size: 20px;
+    text-decoration: none;
+    /* Remover sublinhado padrão dos links */
+    padding: 8px 12px;
+    /* Espaçamento interno dos links */
+}
+
+nav a:hover {
+    /* Estilos para hover sobre os links */
+    background-color: #111;
+    /* Cor de fundo ao passar o mouse */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    /* Cor de fundo do menu suspenso */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    /* Cor dos links do menu suspenso */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    /* Estilos para hover sobre os links do menu suspenso */
+    background-color: #111;
+    /* Cor de fundo ao passar o mouse */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.jujutsulogo {
+    width: 150px;
+    height: auto;
+    filter: drop-shadow(1px 1px 2px rgb(255, 215, 0));
+}

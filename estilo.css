@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: #000000;
+    /* Cor de fundo da navbar */
+    color: #fff;
+    /* Cor do texto da navbar */
+    padding: 10px;
+    /* Espaçamento interno da navbar */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    /* Ativar Flexbox */
+    justify-content: space-between;
+    /* Alinhar itens da barra de navegação */
+    align-items: center;
+    /* Alinhar verticalmente os itens */
+    z-index: 999;
+    /* Garantir que a barra de navegação esteja acima de outros elementos */
+}
+
+nav ul {
+    list-style: none;
+    /* Remover marcadores de lista padrão */
+    margin: 0;
+    /* Remover margem padrão da lista */
+    padding: 0;
+    /* Remover preenchimento padrão da lista */
+    display: flex;
+    /* Ativar Flexbox */
+    align-items: center;
+    /* Alinhar verticalmente os itens */
+}
+
+nav li {
+    margin-right: 20px;
+    /* Espaçamento entre os itens do menu */
+}
+
+nav a {
+    color: #fff;
+    /* Cor dos links da navbar */
+    font-size: 20px;
+    text-decoration: none;
+    /* Remover sublinhado padrão dos links */
+    padding: 8px 12px;
+    /* Espaçamento interno dos links */
+}
+
+nav a:hover {
+    /* Estilos para hover sobre os links */
+    background-color: #111;
+    /* Cor de fundo ao passar o mouse */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    /* Cor de fundo do menu suspenso */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    /* Cor dos links do menu suspenso */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    /* Estilos para hover sobre os links do menu suspenso */
+    background-color: #111;
+    /* Cor de fundo ao passar o mouse */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.jujutsulogo {
+    width: 150px;
+    height: auto;
+    filter: drop-shadow(1px 1px 2px rgb(255, 215, 0));
+}
+
+.card {
+    position: relative;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 600px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    /* Centralizar horizontal e verticalmente */
+    position: absolute;
+    top: 700px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.iframe1 {
+    width: 500px;
+    height: 800px;
+}
+
+.card h2 {
+    font-family: helvetica;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-family: helvetica;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.card a {
+    text-decoration: none;
+    /* Remove o sublinhado */
+    font-size: 20px;
+    /* Define o tamanho do texto */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+}
+
+.card1 {
+    position: relative;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 600px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    /* Centralizar horizontal e verticalmente */
+    position: absolute;
+    top: 1900px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.iframe2 {
+    width: 500px;
+    height: 800px;
+}
+
+.card1 h2 {
+    font-family: helvetica;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card1 p {
+    font-family: helvetica;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.card1 a {
+    text-decoration: none;
+    /* Remove o sublinhado */
+    font-size: 20px;
+    /* Define o tamanho do texto */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    /* Distribui os cards igualmente ao longo do eixo principal */
+    margin-top: 50px;
+    /* Espaçamento opcional entre os cards e o topo */
+}
+
+
+.container1 {
+    position: relative;
+    top: 2300px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculator label {
+    margin-bottom: 5px;
+}
+
+.calculator input,
+.calculator select {
+    margin-bottom: 10px;
+}
+
+.calculator button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.calculator button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.texto {
+    text-align: justify;
+}
+.container3{
+    position: relative;
+    top: 1300px;
+}
+.container5{
+    position: relative;
+    top: 1400px;
+}
